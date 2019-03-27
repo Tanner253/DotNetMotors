@@ -10,7 +10,7 @@
 ***[Tell me about your application, should be about a paragraph]***
 This is a C# console application that will ask a user several questions about me, the
 developer. There are multiple question types ranging from inputting a number to True or False.
-At the end of the game the user receives their total score.
+At the end of the game the user receives their total score...
 
 ------------------------------
 
