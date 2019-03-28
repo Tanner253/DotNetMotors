@@ -29,7 +29,9 @@ Then select and open ```AboutMe.sln```
 
 ## Visuals
 ***[Add screenshots of your application in action]***
-![Image 1](/assets/diagram.JPEG)
+![Image 1](/assets/diagram.JPG)
+![Image 1](/assets/diagram2.0.JPG)
+
 ##### Application Start
 ![Image 1](https://via.placeholder.com/750x500)
 ##### Using the Application
@@ -41,3 +43,5 @@ Then select and open ```AboutMe.sln```
 
 ## Change Log
 1.0 submits assignment
+
+
