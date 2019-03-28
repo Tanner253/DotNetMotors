@@ -12,7 +12,7 @@ namespace DotNetMotors.classes
         public bool HasBow { get; set; } = true;
         
         
-        public abstract void Drives();
+        public abstract string Drives();
     }
     
 

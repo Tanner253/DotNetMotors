@@ -19,19 +19,19 @@ namespace DotNetMotors.classes
             return true;
         }
 
-        public override void Drives()
+        public override string Drives()
         {
-            Console.WriteLine("The Boat is Driving!");
+            return "The Boat is Driving!";
         }
 
-        public override void TurnOff()
+        public override string TurnOff()
         {
-            Console.WriteLine("The boat has turned off.");
+            return "The boat has turned off.";
         }
 
-        public override void TurnOn()
+        public override string TurnOn()
         {
-            Console.WriteLine("The boat has turned on.");
+            return "The boat has turned on.";
         }
     }
 }

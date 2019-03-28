@@ -11,8 +11,8 @@ namespace DotNetMotors.classes
         public virtual bool IsReal { get; set; }
         public virtual int Price { get; set; }
 
-        public abstract void TurnOn();
-        public abstract void TurnOff();
+        public abstract string TurnOn();
+        public abstract string TurnOff();
 
     }
 }

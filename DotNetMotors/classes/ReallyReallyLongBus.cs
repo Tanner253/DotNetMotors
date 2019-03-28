@@ -10,29 +10,29 @@ namespace DotNetMotors.classes
         public override bool MakesNoise { get; set; } = false;
 
         public override int Price { get; set; } = 13000;
-        public override void DriveForward()
+        public override string DriveForward()
         {
-            Console.WriteLine("The Really Really Long Bus doesn't drive forward");
+            return "The Really Really Long Bus doesn't drive forward";
         }
 
-        public override void Honk()
+        public override string Honk()
         {
-            Console.WriteLine("BEEP BEEP");
+            return "BEEP BEEP";
         }
 
-        public override void Reverse()
+        public override string Reverse()
         {
-            Console.WriteLine("The Really Really Long Bus doesn't go in reverse");
+            return "The Really Really Long Bus doesn't go in reverse";
         }
 
-        public override void TurnOff()
+        public override string TurnOff()
         {
-            Console.WriteLine("The Really Really Long Bus has been turned off forever");
+            return "The Really Really Long Bus has been turned off forever";
         }
 
-        public override void TurnOn()
+        public override string TurnOn()
         {
-            Console.WriteLine("The Really Really Long Bus doesn't turn on");
+             return "The Really Really Long Bus doesn't turn on";
         }
     }
 }

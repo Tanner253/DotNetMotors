@@ -76,16 +76,16 @@ namespace XUnitTest
             //assert
             Assert.False(output1);
         }
-        //[Fact]
+        [Fact]
         public void RowBoatCanDrive()
         {
             //arrange
             RowBoat rowboat = new RowBoat();
             //act
-            var var = rowboat.Drives();
+            string var = rowboat.Drives();
 
             //assert
-            Assert.Equal("The Boat is going somewhere.", );
+            Assert.Equal("The Boat is going somewhere.", var);
         }
     }
 }

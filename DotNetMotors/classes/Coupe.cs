@@ -12,28 +12,28 @@ namespace DotNetMotors.classes
 
         public override int Price { get; set; } = 3000;
 
-        public override void DriveForward()
+        public override string DriveForward()
         {
-            Console.WriteLine("The sedan drives forward");
+            return "The car drives forward";
         }
-        public override void Honk()
+        public override string Honk()
         {
-            Console.WriteLine("BEEP BEEP im a coupe!");
-        }
-
-        public override void Reverse()
-        {
-            Console.WriteLine("The car drives forward");
+            return "BEEP BEEP im a coupe!";
         }
 
-        public override void TurnOff()
+        public override string Reverse()
         {
-            Console.WriteLine("The sedan has turned off");
+            return "The car drives forward";
         }
 
-        public override void TurnOn()
+        public override string TurnOff()
         {
-            Console.WriteLine("The sedan has turned on");
+            return "The sedan has turned off";
+        }
+
+        public override string TurnOn()
+        {
+           return "The sedan has turned on";
         }
     }
 }

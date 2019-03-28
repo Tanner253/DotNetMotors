@@ -27,11 +27,11 @@ namespace DotNetMotors
             bool output2 = speedboat.IsReal; 
             Console.WriteLine(output2);
             Console.WriteLine("-----can a speedBoat drive?-----");
-            speedboat.Drives();
+            Console.WriteLine(speedboat.Drives());
             Console.WriteLine("-----Can the speedBoat turn on?-----");
-            speedboat.TurnOn();
+            Console.WriteLine(speedboat.TurnOn());
             Console.WriteLine("-----Can the speedBoat turn off?-----");
-            speedboat.TurnOff();
+            Console.WriteLine(speedboat.TurnOff());
             Console.WriteLine("price:");
             Console.WriteLine(speedboat.Price);
             Console.ReadLine();
@@ -51,11 +51,11 @@ namespace DotNetMotors
             bool output3 = rowboat.IsCool;
             Console.WriteLine(output3);
             Console.WriteLine("-----can a rowBoat drive?-----");
-            rowboat.Drives();
+            Console.WriteLine(rowboat.Drives());
             Console.WriteLine("-----Can the rowBoat turn on?-----");
-            rowboat.TurnOn();
+            Console.WriteLine(rowboat.TurnOn());
             Console.WriteLine("-----Can the rowBoat turn off?-----");
-            rowboat.TurnOff();
+            Console.WriteLine(rowboat.TurnOff());
             Console.WriteLine("price:");
             Console.WriteLine(rowboat.Price);
         }
@@ -69,11 +69,11 @@ namespace DotNetMotors
             bool output2 = sedan.Starts;
             Console.WriteLine(output2);
             Console.WriteLine("Does a Sedan honk?");
-            sedan.Honk();
+            Console.WriteLine(sedan.Honk());
             Console.WriteLine("Does the car drive?");
-            sedan.DriveForward();
+            Console.WriteLine(sedan.DriveForward());
             Console.WriteLine("Does the car go in reverse?");
-            sedan.Reverse();
+            Console.WriteLine(sedan.Reverse());
             Console.WriteLine("price:");
             Console.WriteLine(sedan.Price);
         }
@@ -87,15 +87,15 @@ namespace DotNetMotors
             bool output2 = coupe.Starts;
             Console.WriteLine(output2);
             Console.WriteLine("Does a coupe honk?");
-            coupe.Honk();
+            Console.WriteLine(coupe.Honk());
             Console.WriteLine("Does a coupe turn on?");
-            coupe.TurnOn();
+            Console.WriteLine(coupe.TurnOn());
             Console.WriteLine("Does the coupe drive?");
-            coupe.DriveForward();
+            Console.WriteLine(coupe.DriveForward());
             Console.WriteLine("Does the coupe go in reverse?");
-            coupe.Reverse();
+            Console.WriteLine(coupe.Reverse());
             Console.WriteLine("Does a coupe turn off?");
-            coupe.TurnOff();
+            Console.WriteLine(coupe.TurnOff());
             Console.WriteLine("price:");
             Console.WriteLine(coupe.Price);
         }
@@ -109,16 +109,16 @@ namespace DotNetMotors
             Console.WriteLine("-----does a ReallyReallyLongBu start?-----");
             bool output2 = bus.Starts;
             Console.WriteLine(output2);
-            Console.WriteLine("Does a ReallyReallyLongBu honk?");
-            bus.Honk();
-            Console.WriteLine("Does a ReallyReallyLongBu turn on?");
-            bus.TurnOn();
-            Console.WriteLine("Does the ReallyReallyLongBu drive?");
-            bus.DriveForward();
-            Console.WriteLine("Does the ReallyReallyLongBu go in reverse?");
-            bus.Reverse();
-            Console.WriteLine("Does a ReallyReallyLongBu turn off?");
-            bus.TurnOff();
+            Console.WriteLine("======Does a ReallyReallyLongBu honk?======");
+            Console.WriteLine(bus.Honk());
+            Console.WriteLine("======Does a ReallyReallyLongBu turn on?======");
+            Console.WriteLine(bus.TurnOn());
+            Console.WriteLine("======Does the ReallyReallyLongBu drive?======");
+            Console.WriteLine(bus.DriveForward());
+            Console.WriteLine("======Does the ReallyReallyLongBu go in reverse?======");
+            Console.WriteLine(bus.Reverse());
+            Console.WriteLine("======Does a ReallyReallyLongBu turn off?======");
+            Console.WriteLine(bus.TurnOff());
             Console.WriteLine("price:");
             Console.WriteLine(bus.Price);
         }
