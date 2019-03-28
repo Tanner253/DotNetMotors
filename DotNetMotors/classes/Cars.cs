@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    abstract class Cars :  DotNetMotors
+    public abstract class Cars :  DotNetMotors
     {
         public abstract void DriveForward();
         public abstract void Reverse();

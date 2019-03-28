@@ -6,9 +6,10 @@ namespace DotNetMotors.classes
 {
     class Sedan : RunningCar
     {
-        public override bool Starts { get ; set ; }
-        public override bool MakesNoise { get; set ; }
+        public override bool Starts { get; set; } = true;
+        public override bool MakesNoise { get; set; } = true;
 
+        public override int Price { get; set; } = 1000;
         public override void DriveForward()
         {
             Console.WriteLine("The car drives forward");

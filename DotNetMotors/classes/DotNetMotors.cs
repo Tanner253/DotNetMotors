@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    abstract class DotNetMotors
+    public abstract class DotNetMotors
     {
         abstract public bool Starts { get; set; }
         public abstract bool MakesNoise { get; set; }
