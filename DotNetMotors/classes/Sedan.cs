@@ -6,32 +6,33 @@ namespace DotNetMotors.classes
 {
     class Sedan : RunningCar
     {
-        public override bool Starts { get ; set ; }
-        public override bool MakesNoise { get; set ; }
+        public override bool Starts { get; set; } = true;
+        public override bool MakesNoise { get; set; } = true;
 
-        public override void DriveForward()
+        public override int Price { get; set; } = 1000;
+        public override string DriveForward()
         {
-            Console.WriteLine("The car drives forward");
+            return "The car drives forward";
         }
 
-        public override void Honk()
+        public override string Honk()
         {
-            Console.WriteLine("BEEP BEEP");
+            return "BEEP BEEP";
         }
 
-        public override void Reverse()
+        public override string Reverse()
         {
-            Console.WriteLine("The car drives forward");
+            return "The car drives forward";
         }
 
-        public override void TurnOff()
+        public override string TurnOff()
         {
-            Console.WriteLine("The coupe has turned off");
+            return "The coupe has turned off";
         }
 
-        public override void TurnOn()
+        public override string TurnOn()
         {
-            Console.WriteLine("The coupe has turned on");
+            return "The coupe has turned on";
         }
     }
 }

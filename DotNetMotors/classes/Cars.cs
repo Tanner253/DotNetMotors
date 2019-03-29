@@ -4,10 +4,10 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    abstract class Cars :  DotNetMotors
+    public abstract class Cars :  DotNetMotors
     {
-        public abstract void DriveForward();
-        public abstract void Reverse();
-        public abstract void Honk();
+        public abstract string DriveForward();
+        public abstract string Reverse();
+        public abstract string Honk();
     }
 }

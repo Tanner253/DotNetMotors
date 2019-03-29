@@ -4,33 +4,34 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    class SpeedBoat : Boat , IHasBow
+    public class SpeedBoat : Boat , IHasBow
     {
         public override bool Floats { get; set; }
         public override int HasFlag { get; set; }
-        public override bool Flys { get; set ; }
+        
         public override bool Starts { get; set; }
         public override bool MakesNoise { get; set ; }
+        public override int Price { get; set; } = 32000;
 
-
+        public override bool IsReal { get; set; } = true;
         public bool IHasBow(IHasBow hasBow)
         {
             return true;
         }
 
-        public override void Drives()
+        public override string Drives()
         {
-            Console.WriteLine("The Boat is going somewhere.");
+            return "The Boat is Driving!";
         }
 
-        public override void TurnOff()
+        public override string TurnOff()
         {
-            Console.WriteLine("The boat has turned off.");
+            return "The boat has turned off.";
         }
 
-        public override void TurnOn()
+        public override string TurnOn()
         {
-            Console.WriteLine("The boat has turned on.");
+            return "The boat has turned on.";
         }
     }
 }

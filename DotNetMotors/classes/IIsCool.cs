@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    interface IIsCool
+    public interface IIsCool
     {
         bool IsCool { get; set; }
     }

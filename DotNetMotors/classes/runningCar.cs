@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    abstract class RunningCar : Cars
+    public abstract class RunningCar : Cars
     {
     }
 }

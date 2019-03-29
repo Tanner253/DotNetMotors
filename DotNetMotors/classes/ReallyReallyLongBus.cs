@@ -4,34 +4,35 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    class ReallyReallyLongBus : BrokenCar 
+    public class ReallyReallyLongBus : BrokenCar 
     {
-        public override bool Starts { get; set; }
-        public override bool MakesNoise { get; set; }
+        public override bool Starts { get; set; } = false;
+        public override bool MakesNoise { get; set; } = false;
 
-        public override void DriveForward()
+        public override int Price { get; set; } = 13000;
+        public override string DriveForward()
         {
-            Console.WriteLine("The Really Really Long Bus drives forward");
+            return "The Really Really Long Bus doesn't drive forward";
         }
 
-        public override void Honk()
+        public override string Honk()
         {
-            Console.WriteLine("BEEP BEEP");
+            return "BEEP BEEP";
         }
 
-        public override void Reverse()
+        public override string Reverse()
         {
-            Console.WriteLine("The Really Really Long Bus drives forward");
+            return "The Really Really Long Bus doesn't go in reverse";
         }
 
-        public override void TurnOff()
+        public override string TurnOff()
         {
-            Console.WriteLine("The Really Really Long Bus has turned off");
+            return "The Really Really Long Bus has been turned off forever";
         }
 
-        public override void TurnOn()
+        public override string TurnOn()
         {
-            Console.WriteLine("The Really Really Long Bus has turned on");
+             return "The Really Really Long Bus doesn't turn on";
         }
     }
 }
