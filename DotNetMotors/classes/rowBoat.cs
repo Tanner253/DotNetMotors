@@ -26,7 +26,7 @@ namespace DotNetMotors.classes
 
         public override string Drives()
         {
-           return "The Boat is going somewhere.";
+           return $"The Boat is going somewhere. and is cool : {IsCool}";
         }
 
         public override string TurnOff()

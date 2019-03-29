@@ -87,5 +87,30 @@ namespace XUnitTest
             //assert
             Assert.Equal("The Boat is going somewhere.", var);
         }
+        [Fact]
+        public void RowBoatCanTurnOff()
+        {
+            //arrange
+            RowBoat rowboat = new RowBoat();
+            //act
+            string var = rowboat.TurnOff();
+
+            //assert
+            Assert.Equal("The boat has turned off.", var);
+        }
+         [Fact]
+         public void CanTurnOn()
+        {
+            //arrange
+            RowBoat rowboat = new RowBoat();
+
+            //act
+            string var = rowboat.TurnOn();
+
+            Assert.Equal("The boat cannot turn on", var);
+
+
+
+        }
     }
 }
