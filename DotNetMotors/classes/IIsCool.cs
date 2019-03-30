@@ -7,5 +7,6 @@ namespace DotNetMotors.classes
     public interface IIsCool
     {
         bool IsCool { get; set; }
+
     }
 }
