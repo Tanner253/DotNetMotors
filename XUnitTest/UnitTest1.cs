@@ -112,5 +112,105 @@ namespace XUnitTest
 
 
         }
+
+
+
+
+
+
+
+        [Fact]
+        public void CoupeMakesnoise()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            bool output1 = coupe.MakesNoise;
+            //assert
+            Assert.True(output1);
+        }
+        [Fact]
+        public void CoupeIsReaL()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            bool output = coupe.IsReal;
+            
+            //assert
+            Assert.False(output);
+        }
+        [Fact]
+        public void CoupePrice()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+
+            int output1 = coupe.Price ;
+
+            //assert
+            Assert.Equal(3000, output1);
+        }
+        [Fact]
+        public void CoupeCanDrive()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            string output = coupe.DriveForward();
+            
+
+            //assert
+            Assert.Equal("The car drives forward", output);
+        }
+        [Fact]
+        public void TheCoupeCanreverse()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+
+            //act
+
+            string output = coupe.Reverse();
+
+            //assert
+            Assert.Equal("The car Reverses", output);
+        }
+        [Fact]
+        public void CoupeCanHonk()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            string output = coupe.Honk();
+
+
+            //assert
+            Assert.Equal("BEEP BEEP im a coupe!", output) ;
+        }
+        [Fact]
+        public void CoupeCanTurnOff()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            string var = coupe.TurnOff();
+
+            //assert
+            Assert.Equal("The Coupe has turned off", var);
+        }
+        [Fact]
+        public void RowBoatCanTurnOn()
+        {
+            //arrange
+            Coupe coupe = new Coupe();
+            //act
+            string var = coupe.TurnOn();
+
+            //assert
+            Assert.Equal("The Coupe has turned on", var);
+        }
+        
     }
 }

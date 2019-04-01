@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.classes
 {
-    class Coupe : RunningCar
+    public class Coupe : RunningCar
     {
         public override bool Starts { get ; set ; } = true;
         public override bool MakesNoise { get; set; } = true;
@@ -23,17 +23,17 @@ namespace DotNetMotors.classes
 
         public override string Reverse()
         {
-            return "The car drives forward";
+            return "The car Reverses";
         }
 
         public override string TurnOff()
         {
-            return "The sedan has turned off";
+            return "The Coupe has turned off";
         }
 
         public override string TurnOn()
         {
-           return "The sedan has turned on";
+           return "The Coupe has turned on";
         }
     }
 }
