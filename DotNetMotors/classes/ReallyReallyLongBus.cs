@@ -15,11 +15,8 @@ namespace DotNetMotors.classes
             return "The Really Really Long Bus doesn't drive forward";
         }
 
-        public override string Honk()
-        {
-            return "BEEP BEEP";
-        }
-
+        public override string Honk() { return "BEEP BEEP"; }
+        
         public override string Reverse()
         {
             return "The Really Really Long Bus doesn't go in reverse";

@@ -38,7 +38,10 @@ namespace DotNetMotors.classes
             return "The boat cannot turn on";
         }
 
-
+        bool IHasBow.HasFlag()
+        {
+            return false;
+        }
 
     }
 }

@@ -71,6 +71,7 @@ namespace XUnitTest
             RowBoat rowboat = new RowBoat();
             //act
             rowboat.IsCool = false;
+
             bool output1 = rowboat.IsCool;
 
             //assert
@@ -467,6 +468,19 @@ namespace XUnitTest
             //assert
             Assert.Equal("The Really Really Long Bus doesn't turn on", var);
         }
-
+        [Fact]
+        public void InterfaceCoolWorks()
+        {
+            SpeedBoat speedboat = new SpeedBoat();
+            bool output = speedboat.IHasBow();
+            Assert.True(output);
+        }
+       // [Fact]
+        public void InterfaceBowMethodFunctions()
+        {
+            SpeedBoat speedboat = new SpeedBoat();
+            string output = speedboat.HasFlag();
+            Assert.Equal("True", output);
+        }
     }
 }

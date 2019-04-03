@@ -5,17 +5,17 @@ using System.Threading;
 
 namespace DotNetMotors.classes
 {
-    public class SpeedBoat : Boat , IHasBow
+    public class SpeedBoat : Boat, IHasBow
     {
         public override bool Floats { get; set; }
         public override int HasFlag { get; set; }
-        
+
         public override bool Starts { get; set; }
         public override bool MakesNoise { get; set; } = true;
         public override int Price { get; set; } = 32000;
 
         public override bool IsReal { get; set; } = true;
-        public bool IHasBow(IHasBow hasBow)
+        public bool IHasBow()
         {
             return true;
         }
@@ -39,9 +39,9 @@ namespace DotNetMotors.classes
             return "the boat is going in reverse";
         }
 
-        bool IHasBow.HasFlag()
+        string IHasBow.HasFlag()
         {
-            return true;
+            return "Raise thy flag";
         }
     }
 }

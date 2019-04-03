@@ -9,5 +9,6 @@ namespace DotNetMotors.classes
     {
         bool IsCool { get; set; }
         string ImCool();
+        
     }
 }
