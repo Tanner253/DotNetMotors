@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace DotNetMotors.classes
 {
@@ -10,7 +11,7 @@ namespace DotNetMotors.classes
         public override int HasFlag { get; set; }
         
         public override bool Starts { get; set; }
-        public override bool MakesNoise { get; set ; }
+        public override bool MakesNoise { get; set; } = true;
         public override int Price { get; set; } = 32000;
 
         public override bool IsReal { get; set; } = true;
@@ -32,6 +33,10 @@ namespace DotNetMotors.classes
         public override string TurnOn()
         {
             return "The boat has turned on.";
+        }
+        public string CanReverse()
+        {
+            return "the boat is going in reverse";
         }
     }
 }

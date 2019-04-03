@@ -8,7 +8,7 @@ namespace DotNetMotors.classes
     {
         public override bool Starts { get; set; } = false;
         public override bool MakesNoise { get; set; } = false;
-
+        public override bool IsReal { get; set; } = false;
         public override int Price { get; set; } = 13000;
         public override string DriveForward()
         {
