@@ -35,7 +35,7 @@ namespace DotNetMotors
             Console.WriteLine("price:");
             Console.WriteLine(speedboat.Price);
             Console.ReadLine();
-
+            Console.WriteLine(speedboat.RaiseFlag());
 
         }
         static void ThingsARowBoatCanDo()
@@ -76,6 +76,7 @@ namespace DotNetMotors
             Console.WriteLine(sedan.Reverse());
             Console.WriteLine("price:");
             Console.WriteLine(sedan.Price);
+            Console.WriteLine(sedan.Honk());
         }
         static void ThingsACoupeCanDo()
         {

@@ -7,5 +7,6 @@ namespace DotNetMotors.classes
     public interface IHasBow
     {
         bool HasBow { get; set; }
+        string HasFlag();
     }
 }

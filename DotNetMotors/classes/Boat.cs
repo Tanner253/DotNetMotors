@@ -10,7 +10,10 @@ namespace DotNetMotors.classes
         public abstract int HasFlag { get; set; }
         public bool Flys { get; set; } = false;
         public bool HasBow { get; set; } = true;
-        
+        public virtual string RaiseFlag()
+        {
+            return "The flag is raising";
+        }
         
         public abstract string Drives();
     }

@@ -13,6 +13,10 @@ namespace DotNetMotors.classes
 
         public abstract string TurnOn();
         public abstract string TurnOff();
+        public virtual string Honk()
+        {
+            return "BEEP BEEP";
+        }
 
     }
 }

@@ -15,7 +15,9 @@ this application utilizes methods and properties that are astractly inherited or
 ## Getting Started
 Clone this repository to your local machine.
 ```
+
 $ git clone https://github.com/Tanner253/DotNetMotors.git
+
 ```
 #### To run the program from Visual Studio:
 Select ```File``` -> ```Open``` -> ```Project/Solution```
@@ -41,10 +43,13 @@ Inerfaces im using : IsCool and HasBow. Only boats would have bows, and a boat a
 ##### Using the Application
 ![output messages from every method in each class. the "HAS BOW" and "IS COOL" interfaces are utilized, the virtual methods were isreal and the price](/assets/capture2.JPG)
 
+OOP principles stand for Object oriented programming - is a programming language model organized around objects rather than "actions" and data rather than logic. 
 
 ------------------------------
 
 ## Change Log
 1.0 submits assignment
-1.1 utilizes interface properties and inherited methods i use 2 virtual and 2 abstract and not all classes use all methods or properties and "IS COOL" and "HAS BOW" interfaces are utilized, the virtual methods were isreal and the price
+
+1.1 utilizes interface properties and inherited methods i use 2 virtual and 2 abstract and not all classes use all methods or properties and "IS COOL" interfaces are utilized, the virtual methods were isreal and the pric
+1.2 adds tests, interface methods, virtual methods, and oop in readme
 
