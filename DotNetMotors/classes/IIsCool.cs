@@ -8,6 +8,11 @@ namespace DotNetMotors.classes
     public interface IIsCool
     {
         bool IsCool { get; set; }
+
+        /// <summary>
+        /// creates method for being cool must be action
+        /// </summary>
+        /// <returns>string </returns>
         string ImCool();
         
     }

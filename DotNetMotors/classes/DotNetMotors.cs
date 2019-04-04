@@ -10,9 +10,20 @@ namespace DotNetMotors.classes
         public abstract bool MakesNoise { get; set; }
         public virtual bool IsReal { get; set; }
         public virtual int Price { get; set; }
-
+        /// <summary>
+        /// turn on
+        /// </summary>
+        /// <returns>string</returns>
         public abstract string TurnOn();
+        /// <summary>
+        /// turn off
+        /// </summary>
+        /// <returns>string</returns>
         public abstract string TurnOff();
+        /// <summary>
+        /// honk
+        /// </summary>
+        /// <returns>string</returns>
         public virtual string Honk()
         {
             return "BEEP BEEP";
